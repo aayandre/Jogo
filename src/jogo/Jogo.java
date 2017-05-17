@@ -18,9 +18,19 @@ public class Jogo {
         Scanner ler = new Scanner(System.in);
 
         //Entrada
+        System.out.println("Personagens: ");
+        
+        Cores.cor("verde");
+        System.out.println("Darwin:");
+        System.out.println("(Características)\n");
+        
+        Cores.cor("azul");
+        System.out.println("Henry:");
+        System.out.println("(Características)\n");
+        
         Cores.cor("vermelho");
-        System.out.println("Personagens: \nDarwin:\n(Características)\n\nHenry:\n(Características)\n\nLala:\n(Características)\n\n");
-        //Adicionar cor aos nomes----------------------
+        System.out.println("Lala:");
+        System.out.println("(Características)\n");
 
         System.out.println("Selecione um personagem: ");
         String personagem = ler.next();
@@ -33,9 +43,19 @@ public class Jogo {
             //Revalidação do personagem
             System.out.println("Escolha um dos personagens.");
             personagem = ler.next();
-        }//Encontrando o personagem e validando-o FIM
+        }//Encontrando o personagem e validando-o -- FIM
         
         //Checando qual será o personagem/história usada
-        //if()
+        switch(personagem.toLowerCase()) {
+            case "darwin":
+                //Colocarei a classe da história do personagem
+            case "henry":
+                //Colocarei a classe da história do personagem
+            case"lala":
+                //Colocarei a classe da história do personagem
+                
+        }//Checando qual será o personagem/história usada -- FIM
+        
+        
     }
 }
