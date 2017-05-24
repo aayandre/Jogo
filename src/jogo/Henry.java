@@ -16,9 +16,9 @@ public class Henry {
         String historia = "Nascido em 1898, Henry veio de uma família pobre, porém de grande respeito.\n"
                 + "A mãe de Henry teve de sair do emprego e a família entrava cada vez mais em declínio.\n"
                 + "Quando Henry completou 13 anos ele começou a trabalhar com um comerciante.\n";
-        for (int i = 0; i <= historia.length(); i++) {
-            delay(5000);
-            System.out.println(historia.charAt(i));
+        for (int i = 0; i < historia.length(); i++) {
+            delay(50);
+            System.out.print(historia.charAt(i));
             System.out.flush();
         }
 
@@ -30,5 +30,4 @@ public class Henry {
         } catch (InterruptedException ex) {
         }
     }
-
 }

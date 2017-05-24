@@ -5,8 +5,6 @@
  */
 package jogo;
 
-import java.util.Scanner;
-
 /**
  *
  * @author andre.ayamamoto
@@ -14,15 +12,14 @@ import java.util.Scanner;
 public class Jogo {
 
     public static void main(String[] args) {
-        
+
         System.out.println("NOME DO JOGO");
-        
+
         //Escolha de Personagem
         int numSelecionado = SelecaoDePersonagens.opcoes();
-        
+
         //Valida e entra na história do personagem selecionado
         ValidacaoDePersonagens.selecao(numSelecionado);
-        
-        
+
     }
 }

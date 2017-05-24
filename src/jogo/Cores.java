@@ -99,7 +99,7 @@ public class Cores {
                 break;
         }
 
-        System.out.printf("\u001b[%dmm", valor);
+        System.out.printf("\u001b[%dm", valor);
     }
 
     public static void fundo(String cor) {
