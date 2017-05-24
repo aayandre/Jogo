@@ -21,7 +21,7 @@ public class ValidacaoDePersonagens {
                 //Darwin.historia();
                 break;
             case 3:
-                //Henry.historia();
+                Henry.background();
                 break;
             case 4:
                 //Lala.historia();
