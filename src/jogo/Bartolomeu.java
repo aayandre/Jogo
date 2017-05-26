@@ -13,7 +13,7 @@ public class Bartolomeu {
     
     public static int vidaBartolomeu(int perdasGanhos) {
         int hp = 100;
-        hp = +perdasGanhos;
+        hp += perdasGanhos;
         return hp;
     }
 

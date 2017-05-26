@@ -13,7 +13,7 @@ public class Darwin {
     
     public static int vidaDarwin(int perdasGanhos) {
         int hp = 100;
-        hp = +perdasGanhos;
+        hp += perdasGanhos;
         return hp;
     }
     

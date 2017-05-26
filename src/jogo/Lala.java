@@ -13,7 +13,7 @@ public class Lala {
     
     public static int vidaLala(int perdasGanhos) {
         int hp = 100;
-        hp = +perdasGanhos;
+        hp += perdasGanhos;
         return hp;
     }
     
