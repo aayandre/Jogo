@@ -30,6 +30,14 @@ public class AlgumasFuncoes {
         return num;
     }
     
+    //Funções para gerar um delay. Thread: seria o processo -- .sleep: seria a função utilizada nos processos.
+    static void delay(int num) {
+        try {
+            Thread.sleep(num);
+        } catch (InterruptedException e) {
+        }
+    }
+    
     static boolean jogoVelha() {
         
         boolean resultado = false;

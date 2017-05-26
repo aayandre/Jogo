@@ -11,23 +11,28 @@ package jogo;
  */
 public class Henry {
 
+    public static int vidaHenry(int perdasGanhos) {
+        int hp = 100;
+        hp = +perdasGanhos;
+        return hp;
+    }
+
     public static void background() {
         System.out.println("- - - Background - - -");
-        String historia = "Nascido em 1898, Henry veio de uma família pobre, porém de grande respeito.\n"
-                + "A mãe de Henry teve de sair do emprego e a família entrava cada vez mais em declínio.\n"
-                + "Quando Henry completou 13 anos ele começou a trabalhar com um comerciante.\n";
-        for (int i = 0; i < historia.length(); i++) {
-            delay(50);
-            System.out.print(historia.charAt(i));
-            System.out.flush();
+        String inicio = "Nascido em 1898, Henry veio de uma família pobre, porém de grande respeito.\n"
+                + "A mãe de Henry teve de sair do emprego.\nA família entrava cada vez mais em declínio.\n"
+                + "Quando Henry completou 13 anos ele começou a trabalhar com um comerciante.\n"
+                + "Mas havia uma forma melhor de ganhar dinheiro... As Competições.\n";
+        //Letras aparecem a cada 50ms.
+        for (int i = 0; i < inicio.length(); i++) {
+            AlgumasFuncoes.delay(50);
+            System.out.print(inicio.charAt(i));
         }
 
     }
 
-    public static void delay(int num) {
-        try {
-            Thread.sleep(num);
-        } catch (InterruptedException ex) {
-        }
+    public static void primeiraParte() {
+        
     }
+
 }
