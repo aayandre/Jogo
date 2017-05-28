@@ -20,6 +20,7 @@ public class Jogo {
 
         //Valida e entra na história do personagem selecionado
         ValidacaoDePersonagens.selecao(numSelecionado);
+        AlgumasFuncoes.pressioneParaContinuar();
 
     }
 }

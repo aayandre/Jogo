@@ -15,16 +15,16 @@ public class ValidacaoDePersonagens {
 
         switch (numPersonagem) {
             case 1:
-                //Bartolomeu.historia();
+                Bartolomeu.background();
                 break;
             case 2:
-                //Darwin.historia();
+                Darwin.background();
                 break;
             case 3:
-                Henry.background();                
+                Henry.background();
                 break;
             case 4:
-                //Lala.historia();
+                Lala.background();
                 break;
             default:
                 selecao(numPersonagem);

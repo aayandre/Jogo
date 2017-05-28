@@ -5,6 +5,7 @@
  */
 package jogo;
 
+import java.io.IOException;
 import java.util.Scanner;
 
 /**
@@ -24,24 +25,27 @@ public class AlgumasFuncoes {
     }
 
     static int entradaDeDadosINT() {
-        
+
         int num = ler.nextInt();
-        
+
         return num;
     }
-    
+
+    static void pressioneParaContinuar() {
+        System.out.println("\n| - - - Pressione Enter para continuar - - - |");
+        try {
+            System.in.read();
+        } catch (IOException e) {
+        }
+    }
+
     //Funções para gerar um delay. Thread: seria o processo -- .sleep: seria a função utilizada nos processos.
     static void delay(int num) {
         try {
             Thread.sleep(num);
         } catch (InterruptedException e) {
+
         }
-    }
-    
-    static boolean jogoVelha() {
-        
-        boolean resultado = false;
-        return resultado;
     }
 
 }

@@ -32,7 +32,8 @@ public class SelecaoDePersonagens {
         Cores.cor("vermelho");
         System.out.println("4 - Lala:");
         System.out.println("(Características)\n");
-
+        
+        Cores.reset();
         System.out.println("Selecione um personagem: ");
         int numPersonagem = AlgumasFuncoes.entradaDeDadosINT();
 
