@@ -11,6 +11,13 @@ package jogo;
  */
 public class Lala {
     
+    public static void basicInfo() {
+        Cores.cor("vermelho");
+        System.out.println("4 - Lala:");
+        System.out.println("(Características)\n");
+        Cores.reset();
+    }
+    
     public static int vidaLala(int perdasGanhos) {
         int hp = 100;
         hp += perdasGanhos;

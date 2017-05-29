@@ -48,4 +48,10 @@ public class AlgumasFuncoes {
         }
     }
 
+    static void printWithDelay(Caracter escolhido) {
+        for (int i = 0; i < escolhido.Historia.Background.length(); i++) {
+            AlgumasFuncoes.delay(50);
+            System.out.print(escolhido.Historia.Background.charAt(i));
+        }
+    }
 }

@@ -10,7 +10,14 @@ package jogo;
  * @author andré.yamamoto <aayandre94@gmail.com>
  */
 public class Bartolomeu {
-    
+
+    public static void basicInfo() {
+        Cores.cor("ciano");
+        System.out.println("1 - Bartolomeu:");
+        System.out.println("(Características)\n");
+        Cores.reset();
+    }
+
     public static int vidaBartolomeu(int perdasGanhos) {
         int hp = 100;
         hp += perdasGanhos;
@@ -30,5 +37,5 @@ public class Bartolomeu {
         }
 
     }
-    
+
 }

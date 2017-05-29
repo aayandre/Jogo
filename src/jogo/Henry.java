@@ -10,6 +10,13 @@ package jogo;
  * @author andre.ayamamoto
  */
 public class Henry {
+    
+    public static void basicInfo() {
+        Cores.cor("azul");
+        System.out.println("3 - Henry:");
+        System.out.println("(Características)\n");
+        Cores.reset();
+    }
 
     public static int vidaHenry(int perdasGanhos) {
         int hp = 100;

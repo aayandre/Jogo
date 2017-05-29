@@ -11,6 +11,13 @@ package jogo;
  */
 public class Darwin {
     
+    public static void basicInfo() {
+        Cores.cor("verde");
+        System.out.println("2 - Darwin:");
+        System.out.println("(Características)\n");
+        Cores.reset();
+    }
+    
     public static int vidaDarwin(int perdasGanhos) {
         int hp = 100;
         hp += perdasGanhos;

@@ -15,22 +15,40 @@ public class ValidacaoDePersonagens {
 
         switch (numPersonagem) {
             case 1:
-                Bartolomeu.background();
+                System.out.print("Você escolheu o ");
+                Cores.cor("ciano");
+                System.out.print("Bartolomeu");
+                Cores.reset();
+                System.out.println(", certo?");
+                AlgumasFuncoes.pressioneParaContinuar();
                 break;
             case 2:
-                Darwin.background();
+                System.out.print("Você escolheu o ");
+                Cores.cor("verde");
+                System.out.print("Darwin");
+                Cores.reset();
+                System.out.println(", certo?");
+                AlgumasFuncoes.pressioneParaContinuar();
                 break;
             case 3:
-                Henry.background();
+                System.out.print("Você escolheu o ");
+                Cores.cor("azul");
+                System.out.print("Henry");
+                Cores.reset();
+                System.out.println(", certo?");
+                AlgumasFuncoes.pressioneParaContinuar();
                 break;
             case 4:
-                Lala.background();
+                System.out.print("Você escolheu o ");
+                Cores.cor("vermelho");
+                System.out.print("Lala");
+                Cores.reset();
+                System.out.println(", certo?");
+                AlgumasFuncoes.pressioneParaContinuar();
                 break;
             default:
-                selecao(numPersonagem);
+//                SelecaoDePersonagens.opcoesOutrasVezes();
                 break;
         }
-
     }
-
 }

@@ -11,28 +11,56 @@ package jogo;
  */
 public class SelecaoDePersonagens {
 
-    static int opcoes() {
+    static int opcoesPrimeiraVez() {
 
         System.out.println("Escolha um dos personagens abaixo: ");
 
         System.out.println("Personagens: ");
 
-        Cores.cor("ciano");
-        System.out.println("1 - Bartolomeu:");
-        System.out.println("(Características)\n");
+        Bartolomeu.basicInfo();
 
-        Cores.cor("verde");
-        System.out.println("2 - Darwin:");
-        System.out.println("(Características)\n");
+        Darwin.basicInfo();
 
-        Cores.cor("azul");
-        System.out.println("3 - Henry:");
-        System.out.println("(Características)\n");
+        Henry.basicInfo();
 
-        Cores.cor("vermelho");
-        System.out.println("4 - Lala:");
-        System.out.println("(Características)\n");
+        Lala.basicInfo();
+
+        System.out.println("Selecione um personagem: ");
+        int numPersonagem = AlgumasFuncoes.entradaDeDadosINT();
+
+        return numPersonagem;
+    }
+
+    static int[] jaJogados(int numPersonagem) {
+
+        int jaJogados[] = new int[3];
+
+        switch (numPersonagem) {
+            case 1:
+                jaJogados[0] = 1;
+                break;
+            case 2:
+                jaJogados[1] = 1;
+                break;
+            case 3:
+                jaJogados[2] = 1;
+                break;
+            case 4:
+                jaJogados[3] = 1;
+                break;
+        }
         
+        return jaJogados;
+    }
+
+    static int opcoesOutrasVezes(int jaJogados[]) {
+
+        int personagensJogados[] = jaJogados;
+
+        for (int i = 0; i < personagensJogados.length; i++) {
+
+        }
+
         Cores.reset();
         System.out.println("Selecione um personagem: ");
         int numPersonagem = AlgumasFuncoes.entradaDeDadosINT();
