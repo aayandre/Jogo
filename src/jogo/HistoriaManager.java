@@ -19,7 +19,7 @@ public class HistoriaManager {
                 + "O material e a tecnologia das armas eram desconhecidas.\nAté que um dia ele descobriu que seu fornecedor foi raptado.\n"
                 + "Porque as armas que Bartolomeu comerciava eram pontos chave para a vitória de guerras e grandes batalhas.\n";
 
-        String primeiraParte = "xxxxx";
+        String primeiraParte = "A luta começa: ";
 
         String fim = "lalalal";
 
@@ -74,5 +74,10 @@ public class HistoriaManager {
         Historia lala = new Historia(background, primeiraParte, fim);
         return lala;
     }
-    
+
+//    static Historia CreateTrivias() {
+//        String beco = " se depara num beco e a batalha começa: ";
+//        
+//    }
+
 }

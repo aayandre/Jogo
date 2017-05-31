@@ -48,9 +48,9 @@ public class AlgumasFuncoes {
         }
     }
 
-    static void printWithDelay(Caracter escolhido) {
+    static void printWithDelay(Caracter escolhido, int miliseconds) {
         for (int i = 0; i < escolhido.Historia.Background.length(); i++) {
-            AlgumasFuncoes.delay(50);
+            AlgumasFuncoes.delay(miliseconds);
             System.out.print(escolhido.Historia.Background.charAt(i));
         }
     }

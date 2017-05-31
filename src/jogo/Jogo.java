@@ -40,10 +40,13 @@ public class Jogo {
             System.out.println("Personagem Inválido");
         } else {
             escolhido.Played = true;
-            AlgumasFuncoes.printWithDelay(escolhido);
-        }
+            AlgumasFuncoes.printWithDelay(escolhido, 30);
+        
 
         AlgumasFuncoes.pressioneParaContinuar();
+        
+        System.out.println(escolhido.Historia.PrimeiraParte);
+        }
 
 //        System.out.println("NOME DO JOGO");
 //
